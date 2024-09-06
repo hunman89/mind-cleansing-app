@@ -1,0 +1,13 @@
+{
+  "Home": {
+    "title": "Emotion cleansing",
+    "placeholder": "Enter your emotions",
+    "button": "Start Cleansing",
+    "encouragement": "Your Encouragement Message"
+  },
+  "Encouragement": {
+    "title": "Encourage Yourself",
+    "placeholder": "Write an encouragement message",
+    "button": "Send Encouragement"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Home": {
+    "title": "마음 정화",
+    "placeholder": "현재 마음을 적으세요",
+    "button": "정화 시작",
+    "encouragement": "당신의 응원 메시지"
+  },
+  "Encouragement": {
+    "title": "당신을 응원하세요",
+    "placeholder": "응원 메시지 작성",
+    "button": "응원 전달"
+  }
+}
