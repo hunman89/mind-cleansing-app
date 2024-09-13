@@ -6,8 +6,8 @@
     "encouragement": "당신의 응원 메시지"
   },
   "Encouragement": {
-    "title": "당신을 응원하세요",
-    "placeholder": "응원 메시지 작성",
+    "title": "마음 응원",
+    "placeholder": "당신을 응원하는 메시지를 작성하세요",
     "button": "응원 전달"
   }
 }
