@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import styles from "../../styles/Cleansing.module.css";
 
 const Cleansing = () => {
   const router = useRouter();
@@ -21,8 +20,8 @@ const Cleansing = () => {
   }, [router]);
 
   return (
-    <div className={styles.container}>
-      <div className={isFading ? styles.fadeOut : ""}>{text}</div>
+    <div className="flex items-center justify-center h-screen w-screen bg-slate-500 text-white text-2xl">
+      <div className={isFading ? "animate-fadeOut" : ""}>{text}</div>
     </div>
   );
 };

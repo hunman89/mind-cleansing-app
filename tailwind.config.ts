@@ -7,5 +7,18 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [],
+  theme: {
+    extend: {
+      keyframes: {
+        fadeOut: {
+          "0%": { opacity: "1", transform: "scale(1)" },
+          "100%": { opacity: "0", transform: "scale(0.9)" },
+        },
+      },
+      animation: {
+        fadeOut: "fadeOut 2s ease forwards",
+      },
+    },
+  },
 };
 export default config;
