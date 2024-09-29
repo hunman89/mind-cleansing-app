@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 const Cleansing = () => {
@@ -20,10 +20,20 @@ const Cleansing = () => {
   }, [router]);
 
   return (
-    <div className="flex items-center justify-center h-screen w-screen bg-slate-500 text-white text-2xl">
-      <div className={isFading ? "animate-fadeOut" : ""}>{text}</div>
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className="flex items-center justify-center h-screen w-screen bg-slate-500 text-white text-2xl">
+        <div className={isFading ? "animate-fadeOut" : ""}>{text}</div>
+      </div>
+    </Suspense>
   );
 };
 
-export default Cleansing;
+const CleansingPage = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Cleansing />
+    </Suspense>
+  );
+};
+
+export default CleansingPage;

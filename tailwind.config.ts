@@ -11,8 +11,8 @@ const config: Config = {
     extend: {
       keyframes: {
         fadeOut: {
-          "0%": { opacity: "1", transform: "scale(1)" },
-          "100%": { opacity: "0", transform: "scale(0.9)" },
+          from: { opacity: "1", transform: "scale(1)" },
+          to: { opacity: "0", transform: "scale(0.8)" },
         },
       },
       animation: {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import Button from "@/components/button";
 import Textarea from "@/components/textarea";
@@ -12,7 +12,6 @@ export default function Home() {
     string | null
   >(null);
   const router = useRouter();
-  const searchParams = useSearchParams();
   const t = useTranslations("Home");
 
   useEffect(() => {
@@ -22,15 +21,9 @@ export default function Home() {
     }
   }, []);
 
-  const createQueryString = useCallback(
-    (name: string, value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      params.set(name, value);
-
-      return params.toString();
-    },
-    [searchParams]
-  );
+  const createQueryString = useCallback((name: string, value: string) => {
+    return name + "=" + value;
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputText(e.target.value);
