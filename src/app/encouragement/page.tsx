@@ -30,8 +30,9 @@ const Encouragement = () => {
           value={encouragementText}
           onChange={handleInputChange}
           placeholder={t("placeholder")}
+          buttonClick={handleEncourage}
+          buttonText={t("button")}
         />
-        <Button onClick={handleEncourage}>{t("button")}</Button>
       </div>
     </div>
   );

@@ -44,8 +44,9 @@ export default function Home() {
             value={inputText}
             onChange={handleInputChange}
             placeholder={t("placeholder")}
+            buttonClick={handleCleansing}
+            buttonText={t("button")}
           />
-          <Button onClick={handleCleansing}>{t("button")}</Button>
           {encouragementMessage && (
             <p className="font-semibold">{encouragementMessage}</p>
           )}
