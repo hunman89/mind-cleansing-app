@@ -14,10 +14,10 @@ export default function Textarea({
   placeholder,
 }: TextareaProps) {
   return (
-    <div>
+    <div className="flex flex-col w-full px-3 gap-y-3">
       <label
         htmlFor={id}
-        className="block text-sm font-medium leading-6 text-gray-900"
+        className="block text-sm font-medium leading-6 text-gray-900 "
       >
         {placeholder}
       </label>

@@ -35,9 +35,9 @@ export default function Home() {
 
   return (
     <main>
-      <div className="flex flex-col items-center justify-center h-screen text-gray-700 gap-y-24">
-        <h1 className="text-5xl font-bold">{t("title")}</h1>
-        <div className="flex flex-col items-center justify-center gap-y-10">
+      <div className="flex flex-col items-center justify-center h-screen text-gray-700 gap-y-20 sm:flex-row sm:gap-x-20">
+        <h1 className="text-7xl font-bold">{t("title")}</h1>
+        <div className="flex w-screen flex-col items-center justify-center gap-y-5 sm:w-1/2">
           <Textarea
             id="text"
             name="text"
